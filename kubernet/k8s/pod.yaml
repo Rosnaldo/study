@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webserver
+  labels:
+    name: webserver
+spec:
+  containers:
+  - name: webserver
+    image: rosnaldinho20/esquentak8s
+    ports:
+    - containerPort: 8080
